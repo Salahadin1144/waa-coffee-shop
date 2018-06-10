@@ -12,12 +12,22 @@
 </head>
 
 <body>
-	You can choose any presentation framework that could be integrated with
-	Spring
-	<p>
-	<p>
-		The only user is "<b>super</b>" and the password is "<b>pw</b>"
-	<p>
-		<a href="<c:url value="/login" />"> Go to Secure Area </a>
+	<div class="container" id="login-container" style="margin-left: auto; mergin-right: auto;">
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-md-offset-4">
+				<div class="account-wall">
+					<div >
+						<span> <a class="text-center login-title" href="<c:url value="/login" />"> Go to Secure
+								Area </a>
+						</span> 
+						<br/>
+						<span> <a class="text-center login-title" href="<c:url value="/register" />"> Go to
+								Registration Area </a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

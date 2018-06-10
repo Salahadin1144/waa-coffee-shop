@@ -1,3 +1,5 @@
+package edu.mum.coffee.rest;
+
 import java.util.List;
 
 import javax.validation.Valid;

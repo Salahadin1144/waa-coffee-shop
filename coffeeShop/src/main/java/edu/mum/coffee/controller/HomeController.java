@@ -3,14 +3,10 @@ package edu.mum.coffee.controller;
 import java.util.List;
 
 import javax.annotation.Resource;
-import javax.validation.Valid;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -40,7 +36,7 @@ public class HomeController {
 		return model;
 	}
 
-//	@RequestMapping(value = { "/login" }, method = RequestMethod.GET)
+//	@RequestMapping(value = { "/login" }, method = RequestMethod.POST)
 //	public ModelAndView loginPage(@RequestParam(value = "error", required = false) String error,
 //			@RequestParam(value = "logout", required = false) String logout) {
 //
@@ -50,7 +46,7 @@ public class HomeController {
 //		}
 //
 //		if (logout != null) {
-//			model.addObject("message", "Logged out from JournalDEV successfully.");
+//			model.addObject("message", "Logged out from website successfully.");
 //		}
 //
 //		model.setViewName("login");
@@ -60,8 +56,13 @@ public class HomeController {
 	@GetMapping({"/login"})
 	public String loginPage() {
 		System.out.println("Get /login: welcome page called");
-		
 		return "login";
+	}
+	
+	@GetMapping({"/register"})
+	public String registerPage() {
+		System.out.println("Get /register: welcome page called");
+		return "register";
 	}
 
 //	@PostMapping({ "/login" })
@@ -102,12 +103,4 @@ public class HomeController {
 		return model;
 	}
 	
-	
-	
-//	@RequestMapping(value = { "/newPersonForm" }, method = RequestMethod.GET)
-//	public String newPersonForm(Model model) {
-//		System.out.println("createNewForm called...");
-//		model.addAttribute("newPerson",new Person());
-//		return "newPersonForm";
-//	}
 }
