@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: saladin
+Build-Jdk: 10.0.1
+Implementation-Title: coffeeShop
+Implementation-Version: 1.5.3.RELEASE
+Implementation-Vendor-Id: edu.mum
+Implementation-Vendor: Pivotal Software, Inc.
+Implementation-URL: http://projects.spring.io/spring-boot/coffeeShop/
+Created-By: Maven Integration for Eclipse
+
